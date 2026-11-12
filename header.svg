@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="shihonghu · Cloud-Native and AI Infrastructure">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1b3a"/><stop offset="0.6" stop-color="#071226"/><stop offset="1" stop-color="#03070f"/></linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#7fdcff"/><stop offset="1" stop-color="#b9a6ff"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4fd6ff" stop-opacity="0.4"/><stop offset="1" stop-color="#3a7bff" stop-opacity="0"/></radialGradient>
+    <clipPath id="frame"><rect width="1280" height="300" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="300" fill="url(#bg)"/>
+    <circle cx="1040" cy="150" r="260" fill="url(#glow)"/>
+
+    <!-- 一张慢慢亮起来的节点网络：服务和它们之间的调用 -->
+    <g stroke="#4fd6ff" stroke-width="1.2" fill="none" opacity="0.5">
+      <path d="M860 90 L960 150 L1060 80 L1160 140 L1100 230 L980 240 L960 150 M1060 80 L1100 230 M860 90 L980 240 M1160 140 L960 150">
+        <animate attributeName="opacity" values="0.25;0.7;0.25" dur="6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g fill="#eaf8ff">
+      <circle cx="860" cy="90" r="5"><animate attributeName="r" values="4;7;4" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="150" r="8" fill="#ffd58a"><animate attributeName="r" values="7;11;7" dur="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1060" cy="80" r="5"><animate attributeName="r" values="4;7;4" dur="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="1160" cy="140" r="5"><animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="230" r="5"><animate attributeName="r" values="4;7;4" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="980" cy="240" r="5"><animate attributeName="r" values="4;7;4" dur="4s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- 沿着连线跑的请求 -->
+    <circle r="3.5" fill="#ffd58a"><animateMotion dur="4s" repeatCount="indefinite" path="M860 90 L960 150 L1060 80 L1160 140"/></circle>
+    <circle r="3.5" fill="#7fdcff"><animateMotion dur="5s" repeatCount="indefinite" path="M1100 230 L980 240 L960 150 L1160 140"/></circle>
+
+    <!-- 星点 -->
+    <g fill="#9fd0ff">
+      <circle cx="120" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="60" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="34" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="270" r="1.3"><animate attributeName="opacity" values="1;0.3;1" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="262" r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <rect x="76" y="62" width="56" height="4" rx="2" fill="#4fd6ff"/>
+    <text x="76" y="112" font-family="Consolas, 'JetBrains Mono', monospace" font-size="20" letter-spacing="5" fill="#7fdcff">BACKEND · CLOUD-NATIVE · AI</text>
+    <text x="74" y="188" font-family="'Segoe UI', 'Microsoft YaHei UI', 'PingFang SC', sans-serif" font-size="76" font-weight="700" letter-spacing="2" fill="url(#title)">shihonghu</text>
+    <text x="76" y="236" font-family="'Segoe UI', 'Microsoft YaHei UI', 'PingFang SC', sans-serif" font-size="24" fill="#cfe6ff">AWS Cloud-Native · AI Integration · High-Concurrency Systems</text>
+  </g>
+</svg>
